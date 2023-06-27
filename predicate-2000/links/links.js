@@ -631,9 +631,15 @@ let links = [
 	}
 ];
 
-link = links[(Math.floor(Math.random() * (links.length)))];
-url = new URL(window.location);
-if (url.searchParams.get('action') === 'jump') {
-  window.location = link.url;
+function buildLinks() {
+  let html = "";
+  for (let i = 0; i < links.length; i++) {
+    link = links[i];
+    html += `<h3><a href="${link.url}">${link.title}</a></h3>`;
+    if (link.description !== null) {
+      html += `<p>{link.description}</p>`;
+    }
+  }
+  return html;
 }
 

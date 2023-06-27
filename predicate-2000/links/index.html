@@ -4,10 +4,10 @@
 		<meta http-equiv=content-type content="text/html;charset=iso-8859-1">
 		<title>[ p r e d i c a t e - d o t - n e t ]</title>
 		<link href=../components/predicate.css rel=styleSheet type=text/css>
-		<script type="text/javascript" src="links.js"></script>
+		<script type="text/javascript" src="./links.js"></script>
 	</head>
 
-	<body bgcolor=gray>
+	<body bgcolor=gray link=gray vlink=gray>
 		<center>
 			<table border=0 cellpadding=0 cellspacing=0 width=100% height=95%>
 				<tr>
@@ -15,12 +15,11 @@
 						<table border=0 cellpadding=0 cellspacing=0 width=550>
 							<tr height=20>
 								<td height=20 colspan=3 bgcolor=black align=left valign=middle>
-									<p class=inverse>
 									<table border=0 cellpadding=0 cellspacing=0 width=100%>
 										<tr>
 											<td>
 												<div class=inverse>
-													&nbsp;&nbsp;<a href=../index.html>predicate.net</a>&nbsp;<b>::</b>&nbsp;<script>document.write("<a href='" + link.url + "'>" + link.title + "</a>")</script>
+													&nbsp;&nbsp;<a href=../index.html>predicate.net</a>&nbsp;::&nbsp;links
 												</div>
 											</td>
 											<td>
@@ -37,10 +36,9 @@
 										<b>
 										<table border=0 cellpadding=0 cellspacing=5 width=100%>
 											<tr>
-												<td>
-													<h3><script>document.write("<a href='" + link.url + "'>" + link.title + "</a>")</script></h3>
-													<p><script>if (link.description) document.write(link.description)</script></p>
-												</td>
+											<td>
+											  <script>document.write(buildLinks())</script>
+											</td>
 											</tr>
 										</table>
 										</b></div>
