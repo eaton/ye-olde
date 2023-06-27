@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+	<head>
+	
+		<SCRIPT language="JavaScript">
+			<!--
+			
+			var pages = new Array(23);
+			pages[0]="00.jpg";
+			pages[1]="01.jpg";
+			pages[2]="02.jpg";
+			pages[3]="03.jpg";
+			pages[4]="04.jpg";
+			pages[5]="05.jpg";
+			pages[6]="06.jpg";
+			pages[7]="07.jpg";
+			pages[8]="08.jpg";
+			pages[9]="09.jpg";
+			pages[10]="10.jpg";
+			pages[11]="11.jpg";
+			pages[12]="12.jpg";
+			pages[13]="13.jpg";
+			pages[14]="14.jpg";
+			pages[15]="15.jpg";
+			pages[16]="16.jpg";
+			pages[17]="17.jpg";
+			pages[18]="18.jpg";
+			pages[19]="19.jpg";
+			pages[20]="20.jpg";
+			pages[21]="21.jpg";
+			pages[22]="22.jpg";
+			
+			currentPage = 0;
+			
+			function next_page() {
+				if (currentPage < 22) { currentPage++ };
+				swap(currentPage);
+			}
+			
+			function prev_page() {
+				if (currentPage > 0) { currentPage-- } ;
+				swap(currentPage);
+			}
+			
+			function swap(imgIndex) {
+    				document['page'].src = pages[imgIndex];
+  			}
+
+			//-->
+		</SCRIPT>
+
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive">
+		<title>one hundred words - issue 1</title>
+	</head>
+
+	<body bgcolor="black">
+		<p align="center">
+			<table width="180" border="0" cellspacing="0" cellpadding="5">
+				<tr>
+					<td colspan="3" align="center" valign="top"><font size="1" color="gray" face="Courier New, Courier, Monaco, monospace">one hundred words. issue one.</font></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td rowspan="3"><img src="00.jpg" name="page" id="page" width="560" height="850" border="0"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="#" onClick="prev_page();"><img src="prev.gif" width="20" height="850" border="0"></a></td>
+					<td><a href="#" onClick="next_page();"><img src="next.gif" width="20" height="850" border="0"></a></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center" valign="bottom"><font size="1" color="gray" face="Courier New, Courier, Monaco, monospace">copyright 2004 <a href="mailto:mozart@havana-mod.com">jeff eaton</a>, <a href="mailto:caleb@havana-mod.com">jason scott</a>.</font></td>
+				</tr>
+			</table>
+		</p>
+	</body>
+
+</html>
